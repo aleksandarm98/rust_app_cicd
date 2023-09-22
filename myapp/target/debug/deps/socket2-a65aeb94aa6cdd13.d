@@ -1,9 +1,0 @@
-/Users/aleksandarmilutinovic/GitHub/tenacity/rust_demo_cicd/myapp/target/debug/deps/socket2-a65aeb94aa6cdd13.rmeta: /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.3/src/lib.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.3/src/sockaddr.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.3/src/socket.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.3/src/sockref.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.3/src/sys/unix.rs
-
-/Users/aleksandarmilutinovic/GitHub/tenacity/rust_demo_cicd/myapp/target/debug/deps/socket2-a65aeb94aa6cdd13.d: /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.3/src/lib.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.3/src/sockaddr.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.3/src/socket.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.3/src/sockref.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.3/src/sys/unix.rs
-
-/Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.3/src/lib.rs:
-/Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.3/src/sockaddr.rs:
-/Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.3/src/socket.rs:
-/Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.3/src/sockref.rs:
-/Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.5.3/src/sys/unix.rs:
