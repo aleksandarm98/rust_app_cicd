@@ -1,26 +1,17 @@
-FROM rust:latest AS build-env
-WORKDIR /app
+FROM rust:1.68 AS build
 
-# Kopiramo Cargo.toml fajl
-COPY Cargo.toml ./
+# Kopiramo Cargo.toml i Cargo.lock fajlove
+COPY  . .
 
 # Buildujemo dependencies
-RUN mkdir -p src
-RUN echo "fn main() {println!(\"blog app main function\")}" > src/main.rs
+
 RUN cargo build --release
 
-# Kopiramo ceo projekat
-COPY ./ ./myapp
-
-# Buildujemo Rust aplikaciju
-RUN cargo build --release --manifest-path ./Cargo.toml
-
 # Kreiramo finalnu Docker sliku
-FROM debian:buster-slim
-WORKDIR /app
+FROM debian:bullseye
 
 # Kopiramo izgrađene fajlove iz build-env kontejnera
-COPY --from=build-env /app/myapp/ .
+COPY --from=build ./target/release/rust_demo_api ./rust_demo_api
 
 # Pokrećemo Rust aplikaciju
-CMD ["./myapp"]
+CMD ["./rust_demo_api"]
