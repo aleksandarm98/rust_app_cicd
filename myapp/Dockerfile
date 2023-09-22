@@ -1,8 +1,8 @@
 FROM rust:latest AS build-env
 WORKDIR /app
 
-# Kopiramo Cargo.toml i Cargo.lock fajlove
-COPY Cargo.toml Cargo.lock ./
+# Kopiramo Cargo.toml fajl
+COPY Cargo.toml ./
 
 # Buildujemo dependencies
 RUN mkdir -p src
