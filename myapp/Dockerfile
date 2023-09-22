@@ -10,7 +10,7 @@ RUN echo "fn main() {println!(\"blog app main function\")}" > src/main.rs
 RUN cargo build --release
 
 # Kopiramo ceo projekat
-COPY ./myapp ./myapp
+COPY ./ ./myapp
 
 # Buildujemo Rust aplikaciju
 RUN cargo build --release --manifest-path ./myapp/Cargo.toml
