@@ -1,1 +1,1 @@
-# rust_app_cicd - app
+# rust_app_cicd - Rust appi
