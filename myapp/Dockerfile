@@ -13,7 +13,7 @@ RUN cargo build --release
 COPY ./ ./myapp
 
 # Buildujemo Rust aplikaciju
-RUN cargo build --release --manifest-path ./myapp/Cargo.toml
+RUN cargo build --release --manifest-path ./Cargo.toml
 
 # Kreiramo finalnu Docker sliku
 FROM debian:buster-slim
