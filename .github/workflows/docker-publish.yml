@@ -22,6 +22,7 @@ jobs:
 
       - name: Build Docker image
         run: |
+           cd myapp/
            docker build -f Dockerfile -t cubexcode/myrustapp:1.0 .
            docker push cubexcode/myrustapp:1.0
   deploy:
