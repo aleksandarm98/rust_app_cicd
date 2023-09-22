@@ -1,0 +1,50 @@
+name: Rust App CI/CD with Docker and Elastic Beanstalk
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-push:
+    name: Build and push Rust Docker image
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+
+      - name: Build Docker image
+        run: |
+           docker build -f Dockerfile -t cubexcode/myrustapp:1.0 .
+           docker push cubexcode/myrustapp:1.0
+  deploy:
+    name: Deploy to Elastic Beanstalk
+    needs: [build-and-push]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Zip application for deployment
+        run: |
+          zip -r deploy.zip . -x '*.git*'
+        working-directory: rust_demo_cicd
+
+      - name: Deploy to Elastic Beanstalk
+        uses: einaregilsson/beanstalk-deploy@v20
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          region: "eu-central-1"
+          application_name: petsmeet-dev
+          environment_name: petsmeet-dev-env
+          version_label: ${{ github.sha }}
+          deployment_package: myapp/src/myapp.zip
