@@ -37,7 +37,7 @@ jobs:
       - name: Zip application for deployment
         run: |
           zip -r deploy.zip . -x '*.git*'
-        working-directory: rust_demo_cicd
+        working-directory: myapp/
 
       - name: Deploy to Elastic Beanstalk
         uses: einaregilsson/beanstalk-deploy@v20
