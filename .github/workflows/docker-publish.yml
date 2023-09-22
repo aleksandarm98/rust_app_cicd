@@ -48,4 +48,4 @@ jobs:
           application_name: Rust-demo-env
           environment_name: Rust-demo-env-env
           version_label: ${{ github.sha }}
-          deployment_package: myapp/src/myapp.zip
+          deployment_package: myapp.zip
