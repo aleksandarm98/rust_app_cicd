@@ -11,9 +11,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
       - name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
@@ -21,6 +18,7 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Build Docker image
+        uses: actions/checkout@v3
         run: |
            cd myapp/
            docker build -f Dockerfile -t cubexcode/myrustapp:1.0 .
