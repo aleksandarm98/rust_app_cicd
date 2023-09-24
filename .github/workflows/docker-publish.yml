@@ -38,7 +38,8 @@ jobs:
       - name: Zip application for deployment
         run: |
           cd myapp/
-          zip -r deploy.zip . -x '*.git*'
+          zip -r deploy.zip . -x '*.git*' -x '.idea/*'
+        working-directory: myapp/
 
       - name: Deploy to Elastic Beanstalk
         uses: einaregilsson/beanstalk-deploy@v20
