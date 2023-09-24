@@ -19,7 +19,7 @@ jobs:
 
       - name: Build Docker image
         uses: actions/checkout@v3
-        run: |
+      - run: |
            cd myapp/
            docker build -f Dockerfile -t cubexcode/myrustapp:1.0 .
            docker push cubexcode/myrustapp:1.0
