@@ -1,17 +1,23 @@
+# Build stage
 FROM rust:1.68 AS build
 
-# Kopiramo Cargo.toml i Cargo.lock fajlove
-COPY  . .
+# Set the working directory in the build stage
+WORKDIR /app
 
-# Buildujemo dependencies
+# Copy the entire application into the container
+COPY . .
 
+# Build the Rust application in the build stage
 RUN cargo build --release
 
-# Kreiramo finalnu Docker sliku
-FROM debian:bullseye
+# Create a new stage for the runtime
+FROM cubexcode/myrustapp:1.0 AS runtime
 
-# Kopiramo izgrađene fajlove iz build-env kontejnera
-COPY --from=build ./target/release/rust_demo_api ./rust_demo_api
+# Set the working directory in the runtime stage
+WORKDIR /app
 
-# Pokrećemo Rust aplikaciju
+# Copy the built binary from the build stage to the runtime stage
+COPY --from=build /app/target/release/rust_demo_api /rust_demo_api
+
+# Set the command to run the Rust application
 CMD ["./rust_demo_api"]
