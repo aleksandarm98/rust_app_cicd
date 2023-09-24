@@ -32,8 +32,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          path: myapp  # Set the correct path to your code
 
       - name: Zip application for deployment
         run: |
