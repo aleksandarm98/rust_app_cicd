@@ -19,5 +19,8 @@ WORKDIR /app
 # Copy the built binary from the build stage to the runtime stage
 COPY --from=build /app/target/release/rust_demo_api /rust_demo_api
 
+EXPOSE 80
+
+
 # Set the command to run the Rust application
 CMD ["./rust_demo_api"]
