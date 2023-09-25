@@ -27,4 +27,3 @@ Inside Elastic Beanstalk, you configure the environment for your application, sp
 ## Testing the Application
 
 Once the application is deployed on Elastic Beanstalk, you will receive a public IP address or URL to test and access the application. This IP address is dynamic and adaptable, meaning it automatically adjusts to changes in the environment.
-
