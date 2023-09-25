@@ -13,8 +13,10 @@ RUN cargo build --release
 # Create a new stage for the runtime
 FROM cubexcode/myrustapp:1.0 AS runtime
 
-# Set the working directory in the runtime stage
-WORKDIR /app
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    libssl1.1 ca-certificates && \
+    rm -rf /var/lib/apt/lists/*
 
 # Copy the built binary from the build stage to the runtime stage
 COPY --from=build /app/target/release/rust_demo_api /rust_demo_api
