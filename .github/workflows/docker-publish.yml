@@ -43,7 +43,7 @@ jobs:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           region: "eu-central-1"
-          application_name: Rust-demo
+          application_name: rust-demo
           environment_name: Rust-demo-env
           version_label: ${{ github.sha }}
           deployment_package: myapp/deploy.zip
