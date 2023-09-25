@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  demo-rust-api:
+    build: "."
+    restart: always
+    networks:
+      - rust_demo
+    ports:
+      - 8080:8080
+
+networks:
+  rust_demo:
+    external: true

@@ -1,0 +1,10 @@
+/Users/aleksandarmilutinovic/GitHub/tenacity/rust_app_cicd/myapp/target/debug/deps/cc-8edd4658801d9be5.rmeta: /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/lib.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe/unix.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/windows_registry.rs
+
+/Users/aleksandarmilutinovic/GitHub/tenacity/rust_app_cicd/myapp/target/debug/deps/libcc-8edd4658801d9be5.rlib: /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/lib.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe/unix.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/windows_registry.rs
+
+/Users/aleksandarmilutinovic/GitHub/tenacity/rust_app_cicd/myapp/target/debug/deps/cc-8edd4658801d9be5.d: /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/lib.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe/unix.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/windows_registry.rs
+
+/Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/lib.rs:
+/Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe.rs:
+/Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe/unix.rs:
+/Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/windows_registry.rs:

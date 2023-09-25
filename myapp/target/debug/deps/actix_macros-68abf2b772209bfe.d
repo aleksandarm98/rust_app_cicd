@@ -1,0 +1,5 @@
+/Users/aleksandarmilutinovic/GitHub/tenacity/rust_app_cicd/myapp/target/debug/deps/libactix_macros-68abf2b772209bfe.dylib: /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-macros-0.2.4/src/lib.rs
+
+/Users/aleksandarmilutinovic/GitHub/tenacity/rust_app_cicd/myapp/target/debug/deps/actix_macros-68abf2b772209bfe.d: /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-macros-0.2.4/src/lib.rs
+
+/Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/actix-macros-0.2.4/src/lib.rs:

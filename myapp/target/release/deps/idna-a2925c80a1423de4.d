@@ -1,0 +1,10 @@
+/Users/aleksandarmilutinovic/GitHub/tenacity/rust_app_cicd/myapp/target/release/deps/idna-a2925c80a1423de4.rmeta: /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.4.0/src/lib.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.4.0/src/punycode.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.4.0/src/uts46.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.4.0/src/uts46_mapping_table.rs
+
+/Users/aleksandarmilutinovic/GitHub/tenacity/rust_app_cicd/myapp/target/release/deps/libidna-a2925c80a1423de4.rlib: /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.4.0/src/lib.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.4.0/src/punycode.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.4.0/src/uts46.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.4.0/src/uts46_mapping_table.rs
+
+/Users/aleksandarmilutinovic/GitHub/tenacity/rust_app_cicd/myapp/target/release/deps/idna-a2925c80a1423de4.d: /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.4.0/src/lib.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.4.0/src/punycode.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.4.0/src/uts46.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.4.0/src/uts46_mapping_table.rs
+
+/Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.4.0/src/lib.rs:
+/Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.4.0/src/punycode.rs:
+/Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.4.0/src/uts46.rs:
+/Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/idna-0.4.0/src/uts46_mapping_table.rs:

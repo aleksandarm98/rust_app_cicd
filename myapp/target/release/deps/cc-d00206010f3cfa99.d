@@ -1,0 +1,10 @@
+/Users/aleksandarmilutinovic/GitHub/tenacity/rust_app_cicd/myapp/target/release/deps/cc-d00206010f3cfa99.rmeta: /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/lib.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe/unix.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/windows_registry.rs
+
+/Users/aleksandarmilutinovic/GitHub/tenacity/rust_app_cicd/myapp/target/release/deps/libcc-d00206010f3cfa99.rlib: /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/lib.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe/unix.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/windows_registry.rs
+
+/Users/aleksandarmilutinovic/GitHub/tenacity/rust_app_cicd/myapp/target/release/deps/cc-d00206010f3cfa99.d: /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/lib.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe/unix.rs /Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/windows_registry.rs
+
+/Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/lib.rs:
+/Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe.rs:
+/Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/os_pipe/unix.rs:
+/Users/aleksandarmilutinovic/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cc-1.0.83/src/windows_registry.rs:
