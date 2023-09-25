@@ -24,26 +24,26 @@ jobs:
            docker build -f Dockerfile -t cubexcode/myrustapp:1.0 .
            docker push cubexcode/myrustapp:1.0
 	   
-    deploy:   
-      needs: [build-and-push]
-      runs-on: ubuntu-latest
+  deploy:   
+    needs: [build-and-push]
+    runs-on: ubuntu-latest
     
-      steps:
-        - name: Checkout code
-          uses: actions/checkout@v2
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-        - name: Zip application for deployment
-          run: |
-            zip -r deploy.zip . -x '*.git*'
+      - name: Zip application for deployment
+        run: |
+          zip -r deploy.zip . -x '*.git*'
           working-directory: myapp/
 
-        - name: Deploy to Elastic Beanstalk
-          uses: einaregilsson/beanstalk-deploy@v20
-          with:
-            aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-            aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-            region: "eu-central-1"
-            application_name: Rust-demo
-            environment_name: Rust-demo-env
-            version_label: ${{ github.sha }}
-            deployment_package: myapp/deploy.zip
+      - name: Deploy to Elastic Beanstalk
+        uses: einaregilsson/beanstalk-deploy@v20
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          region: "eu-central-1"
+          application_name: Rust-demo
+          environment_name: Rust-demo-env
+          version_label: ${{ github.sha }}
+          deployment_package: myapp/deploy.zip
