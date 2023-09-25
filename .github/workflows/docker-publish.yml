@@ -23,9 +23,11 @@ jobs:
            cd myapp/
            docker build -f Dockerfile -t cubexcode/myrustapp:1.0 .
            docker push cubexcode/myrustapp:1.0
-	@@ -31,21 +29,22 @@ jobs:
+	   
+  deploy:   
+    needs: [build-and-push]
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
