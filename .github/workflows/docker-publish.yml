@@ -1,12 +1,13 @@
-name: Rust App CI/CD with Docker and Elastic Beanstalk
+name: Petsmeet develop environment CI/CD
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "develop" ]
 
 jobs:
+
   build-and-push:
+  
     name: Build and push backend docker image for development environment
 
     runs-on: ubuntu-latest
@@ -26,28 +27,28 @@ jobs:
         docker build -f Dockerfile -t cubexcode/petmeet_develop:1.2 .
         docker push cubexcode/petmeet_develop:1.2
 
-  deploy:
-    name: Deploy to Elastic Beanstalk
+  deploy:   
     needs: [build-and-push]
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout source code
       uses: actions/checkout@v2
 
-    - name: Zip application for deployment
+    - name: Generate deployment package
       run: |
         echo "$PWD"
-        zip -r deploy.zip . -x '*.git*' -x '.idea/*'
-      working-directory: PetMeetApp/PetMeetApp
+        zip -r deploy.zip . -x '*.git*'
+      working-directory: PetMeetApp/PetMeetApp/
 
-    - name: Deploy to Elastic Beanstalk
+    - name: Deploy to EB
       uses: einaregilsson/beanstalk-deploy@v20
       with:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         region: "eu-central-1"
-        application_name: rust-demo
-        environment_name: Rust-demo-env
+        application_name: petsmeet-dev
+        environment_name: Petsmeet-dev-env
         version_label: ${{ github.sha }}
-        deployment_package: PetMeetApp/PetMeetApp/deploy.zip
+        deployment_package: PetMeetApp/PetMeetApp/deploy.zip 
+        
