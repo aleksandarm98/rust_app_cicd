@@ -1,30 +1,17 @@
-# Build stage
 FROM rust:1.68 AS build
 
-# Set the working directory in the build stage
-WORKDIR /app
+# Kopiramo Cargo.toml i Cargo.lock fajlove
+COPY  . .
 
-# Copy the entire application into the container
-COPY . .
+# Buildujemo dependencies
 
-# Build the Rust application in the build stage
 RUN cargo build --release
 
-# Create a new stage for the runtime
+# Kreiramo finalnu Docker sliku
 FROM cubexcode/myrustapp:1.0 AS runtime
 
-WORKDIR /app
+# Kopiramo izgrađene fajlove iz build-env kontejnera
+COPY --from=build ./target/release/rust_demo_api ./rust_demo_api
 
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-    libssl1.1 ca-certificates && \
-    rm -rf /var/lib/apt/lists/*
-
-# Copy the built binary from the build stage to the runtime stage
-COPY --from=build /app/target/release/rust_demo_api /rust_demo_api
-
-EXPOSE 80
-
-
-# Set the command to run the Rust application
+# Pokrećemo Rust aplikaciju
 CMD ["./rust_demo_api"]
