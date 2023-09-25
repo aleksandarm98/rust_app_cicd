@@ -13,6 +13,8 @@ RUN cargo build --release
 # Create a new stage for the runtime
 FROM cubexcode/myrustapp:1.0 AS runtime
 
+WORKDIR /app
+
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     libssl1.1 ca-certificates && \
